@@ -3,26 +3,47 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="176dp"
-    android:gravity="bottom"
+    android:layout_height="200dp"
+    android:gravity="center"
     android:padding="16dp"
     android:background="@drawable/drawer_header"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
-    <ImageView
+    <RelativeLayout
+        android:id="@+id/imgUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/drawer_logo"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circle_border">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="9dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/circle"
+            android:padding="3dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/avatar"
+            android:clipToOutline="true" />
+    </RelativeLayout>
+
     <TextView
+        android:id="@+id/fullName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Trần Đức Hiếu"
+        android:text="admin"
+        android:textAllCaps="true"
         android:textColor="@color/light"
         android:textStyle="bold"/>
+
     <TextView
+        android:id="@+id/gmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="admin@admin.vn"
         android:textColor="@color/light"
-        android:textSize="14sp"
+        android:textSize="10sp"
         android:layout_marginBottom="16dp"/>
 </LinearLayout>

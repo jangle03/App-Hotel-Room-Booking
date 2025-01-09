@@ -1,0 +1,6 @@
+<!-- res/drawable/rounded_border.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF"/> <!-- Màu nền bên trong -->
+    <corners android:radius="16dp"/> <!-- Bán kính bo tròn -->
+    <stroke android:color="#FFA500" android:width="2dp"/> <!-- Màu và độ dày của viền -->
+</shape>

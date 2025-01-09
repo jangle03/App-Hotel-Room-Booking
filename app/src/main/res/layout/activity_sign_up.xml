@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Activities.SignUpActivity">
+
+    <!-- Nút Logout -->
+<!--    <ImageView-->
+<!--        android:id="@+id/imgLogout"-->
+<!--        android:layout_width="40dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_margin="16dp"-->
+<!--        android:src="@drawable/logout"-->
+<!--        android:contentDescription="Logout"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent" />-->
+
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@mipmap/logo_app" />
+
+    <!-- Chữ ĐĂNG KÝ -->
+    <TextView
+        android:id="@+id/tvDangKy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/imgLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text=" Đăng Ký"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <!-- Form Đăng ký -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvDangKy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Họ và tên -->
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edttext_background"
+            android:drawableStart="@drawable/username"
+            android:drawablePadding="12dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:hint="Họ và tên"
+            android:gravity="center_vertical"
+            android:inputType="textPersonName"
+            android:textColor="#ffffff"
+            android:textColorHint="#cccccc"
+            android:textSize="14sp" />
+
+        <!-- Tên đăng nhập -->
+        <EditText
+            android:id="@+id/edtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edttext_background"
+            android:drawableStart="@drawable/username"
+            android:drawablePadding="12dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:hint="Tên đăng nhập"
+            android:gravity="center_vertical"
+            android:inputType="textPersonName"
+            android:textColor="#ffffff"
+            android:textColorHint="#cccccc"
+            android:textSize="14sp"/>
+
+        <!-- Mật khẩu -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edttext_background"
+                android:drawableStart="@drawable/password"
+                android:drawablePadding="12dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="48dp"
+                android:hint="Mật khẩu"
+                android:gravity="center_vertical"
+                android:inputType="textPassword"
+                android:textColor="#ffffff"
+                android:textColorHint="#cccccc"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/ivTogglePassword"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/hidden_password"
+                android:contentDescription="Toggle password visibility" />
+        </FrameLayout>
+
+        <!-- Nhập lại mật khẩu -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/edtConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edttext_background"
+                android:drawableStart="@drawable/password"
+                android:drawablePadding="12dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="48dp"
+                android:hint="Nhập lại mật khẩu"
+                android:gravity="center_vertical"
+                android:inputType="textPassword"
+                android:textColor="#ffffff"
+                android:textColorHint="#cccccc"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/ivToggleConfirmPassword"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/hidden_password"
+                android:contentDescription="Toggle confirm password visibility" />
+        </FrameLayout>
+<!--        Nút Đăng ký-->
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/login_btn_background"
+            android:text="ĐĂNG KÝ"
+            android:textColor="#ffffff"
+            android:textSize="20sp"/>
+
+        <!--        Liên kết đăng ký-->
+        <TextView
+            android:id="@+id/txvSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Bạn đã có tài khoản? Đăng nhập."
+            android:textStyle="italic"
+            android:textColor="#ffffff"
+            android:textSize="15sp"/>
+    </LinearLayout>
+    <!--    Hình nền đáy-->
+    <ImageView
+        android:id="@+id/imgBackgroundBottom"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@mipmap/back_bottom" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

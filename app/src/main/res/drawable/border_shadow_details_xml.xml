@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Bóng đổ (Shadow Layer) -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#1A000000" /> <!-- Bóng mờ đen (10% opacity) -->
+        </shape>
+    </item>
+
+    <!-- Nền chính (Main Layer) -->
+    <item android:top="4dp" android:left="4dp" android:right="4dp" android:bottom="0dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white" /> <!-- Màu nền trắng -->
+            <stroke
+                android:width="2dp"
+                android:color="@color/blue70"/>
+        </shape>
+    </item>
+
+</layer-list>

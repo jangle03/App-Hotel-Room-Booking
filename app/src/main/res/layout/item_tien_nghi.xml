@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_margin="8dp"
+    android:textColor="@android:color/black"
+    android:background="@drawable/rounded_border"
+    android:padding="7dp">
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvTienNghi"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Tiện Nghi"-->
+<!--        android:padding="8dp"-->
+<!--        android:textSize="16sp" />-->
+
+    <!-- Icon tiện nghi -->
+    <ImageView
+        android:id="@+id/iconTienNghi"
+        android:layout_width="21dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/star_2" />
+
+    <!-- Text tiện nghi -->
+    <TextView
+        android:id="@+id/tvTienNghi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WiFi miễn phí"
+        android:textSize="15sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:gravity="center"
+        android:textColor="@android:color/black" />
+<!--    <TextView-->
+<!--        android:id="@+id/tvTienNghi"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="WiFi miễn phí"-->
+<!--        android:textSize="15sp"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginLeft="8dp"-->
+<!--        android:gravity="center"-->
+<!--        android:textColor="@android:color/black"-->
+<!--        android:background="@drawable/rounded_border"-->
+<!--        android:padding="5dp"/>-->
+
+
+</LinearLayout>

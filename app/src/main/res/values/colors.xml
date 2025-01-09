@@ -116,4 +116,18 @@
     <color name="nature70">#8B8B8B</color>
     <color name="nature90">#636363</color>
     <color name="nature100">#4E4E4E</color>
+<!--    -->
+    <color name="address">#66C1F1</color>
+    <color name="followers">#0D5D98</color>
+    <color name="headings">#3797CF</color>
+    <color name="solidCircle">#AAFFFFFF</color>
+    <color name="circleBorder">#50FFFFFF</color>
+    <color name="gradEnd">#383ba3</color>
+    <color name="gradCenter">#5276ea</color>
+    <color name="gradStart">#609aff</color>
+    <color name="followersBg">#65DCE5</color>
+    <color name="followingBg">#49BEFF</color>
+    <color name="grey">#E5E5E5</color>
+
+    <color name="white">#FFFFFF</color>
 </resources>

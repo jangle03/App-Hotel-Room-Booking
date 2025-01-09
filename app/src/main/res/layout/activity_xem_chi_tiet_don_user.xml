@@ -1,0 +1,170 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".page.customer.XemChiTietDon">
+
+    <!-- AppBar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/gradStart"
+        android:padding="10dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ad_back_left"
+            android:background="@color/gradStart"
+            android:contentDescription="back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Xem Đơn Đặt Phòng"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:paddingStart="16dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Phòng -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_room"
+                    android:contentDescription="icon room" />
+
+                <TextView
+                    android:id="@+id/roomType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Loại phòng: Deluxe"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:paddingStart="8dp" />
+            </LinearLayout>
+
+            <!-- Tên phòng -->
+            <TextView
+                android:id="@+id/roomName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tên phòng: Phòng A"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginBottom="10dp" />
+
+            <!-- Thông tin người đặt -->
+            <TextView
+                android:id="@+id/bookedBy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đặt bởi: Nguyễn Văn A"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:layout_marginBottom="5dp" />
+
+            <!-- Số điện thoại -->
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Số điện thoại: 0123456789"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:layout_marginBottom="10dp" />
+
+            <!-- CCCD -->
+            <TextView
+                android:id="@+id/cccd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CCCD: 123456789012"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:layout_marginBottom="10dp" />
+
+            <!-- Ngày đặt -->
+            <TextView
+                android:id="@+id/bookedAt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ngày đặt: 12/12/2024"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:drawableStart="@drawable/ic_calendar"
+                android:drawablePadding="8dp"
+                android:layout_marginBottom="10dp" />
+
+            <!-- Ngày check-out -->
+            <TextView
+                android:id="@+id/bookedOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ngày check-out: 14/12/2024"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:drawableStart="@drawable/ic_calendar"
+                android:drawablePadding="8dp"
+                android:layout_marginBottom="10dp" />
+
+            <!-- Giá phòng -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Giá phòng: 500.000 VNĐ"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#007BFF"
+                    android:paddingStart="8dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chưa Thanh Toán"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:paddingStart="8dp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

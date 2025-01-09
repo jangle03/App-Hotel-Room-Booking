@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Lớp bóng -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/brandBlue20" /> <!-- Màu bóng đổ (đen mờ) -->
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+
+    <!-- Lớp chính -->
+    <item android:top="2dp" android:left="2dp" android:right="2dp" android:bottom="4dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF" /> <!-- Nền của LinearLayout -->
+            <stroke
+                android:width="2dp"
+                android:color="#F8E9E9" /> <!-- Màu viền -->
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+</layer-list>

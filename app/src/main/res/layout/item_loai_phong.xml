@@ -1,0 +1,86 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/light"
+    android:layout_margin="10dp">
+
+    <!-- Bố cục chính -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@drawable/border_shadow">
+
+
+        <ImageView
+            android:id="@+id/imgLoaiPhong"
+            android:src="@drawable/anh_phong"
+            android:layout_width="90dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="90dp"
+            android:layout_marginRight="20dp"/>
+        <!-- Bố cục thông tin bên phải ảnh -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Tên phòng -->
+            <TextView
+                android:id="@+id/tvLoaiPhong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Phòng Standard"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"/>
+
+            <!-- Giá phòng -->
+            <TextView
+                android:id="@+id/tvGiaPhong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2,000,000 VND"
+                android:textSize="16sp"
+                android:textColor="#FF5722"
+                android:layout_marginBottom="5dp"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/iconNguoi"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_person"
+                    android:contentDescription="Icon người"/>
+
+                <TextView
+                    android:id="@+id/tvSoNguoiToiDa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 người"
+                    android:textSize="14sp"
+                    android:layout_marginStart="5dp"/>
+            </LinearLayout>
+
+            <!-- Mô tả -->
+            <TextView
+                android:id="@+id/tvMoTa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loại phòng VIP 1"
+                android:textSize="14sp"
+                android:textColor="#757575"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
